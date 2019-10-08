@@ -1,39 +1,37 @@
+body {
+    background-color: #f3f3f3;
+}
 nav {
-    box-sizing: border-box;
-
-}
-header {
-    border: 1px solid black;
-    background: #fff;
-    height: 60px;
+    border: 2px solid #000;
+    background-color: #fff;
+    position: fixed;
+    height: 56px;
     width: 100%;
-    line-height: 60px;
-    margin: 0 auto;
+    line-height: 56px;
+    padding: 0 16px; 
 }
 
-i {
-    height: 24px;
-    width: 24px;
+ul {
+    display: inline;
 }
 
-#ytlogo {
-    height: 24px;
-    width: 100px; 
+.nav-group {
+    margin-right: 10px;
+    padding-left: 10px;
 }
 
-#ytmenu {
-    height: 24px;
-    width: 24px;
+.nav-group li {
+    display: inline-block;
 }
 
-#nav-left {
+.nav-left {
     float: left;
 }
 
-#nav-right {
-    float: right;
+.nav-search {
+    margin: 0 500px;
 }
 
-nav ul li {
-    display: inline;
+.nav-right {
+    float: right;
 }
