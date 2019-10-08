@@ -1,0 +1,39 @@
+nav {
+    box-sizing: border-box;
+
+}
+header {
+    border: 1px solid black;
+    background: #fff;
+    height: 60px;
+    width: 100%;
+    line-height: 60px;
+    margin: 0 auto;
+}
+
+i {
+    height: 24px;
+    width: 24px;
+}
+
+#ytlogo {
+    height: 24px;
+    width: 100px; 
+}
+
+#ytmenu {
+    height: 24px;
+    width: 24px;
+}
+
+#nav-left {
+    float: left;
+}
+
+#nav-right {
+    float: right;
+}
+
+nav ul li {
+    display: inline;
+}
