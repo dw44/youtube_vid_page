@@ -5,17 +5,13 @@
 /* 
 ---------- Main Navigation Bar ----------
 */
-
 nav {
-    border: 1px solid black;
     height: 56px;
     width: 100vw;
     display: flex;
-}
+    position: fixed;
+    background-color: #fff;
 
-.nav-element {
-    line-height: 56px;
-    border: 1px solid black;
 }
 
 .nav-left, .nav-right {
@@ -23,11 +19,70 @@ nav {
     padding: 2px;
 }
 
+.nav-right {
+    text-align: right;
+}
+
 .nav-search {
     flex: 3;
+    height: 56px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bars {
+    padding: 15px 10px 15px 30px;
+}
+
+#logo {
+    padding-bottom: 12px;
+    padding-left: 10px;
+}
+
+#search-bar {
+    width: 565px;
+    height: 28px;
+    padding: 1px 4px;
+    margin: 0 0;
+}
+
+#search-btn {
+    height: 28px; 
+    width: 51px;
+    padding: 1px 6px;
+    background: #f8f8f8a8;
+    border: 1px solid lightgray;
+    margin: 0 0;
+}
+
+#search-btn:hover {
+    background: #c7c7c7;
+}
+
+#camera {
+    padding: 0 18px 8px 0;
+}
+
+
+#apps {
+    padding: 0 18px 7px 0;
+}
+
+#bell {
+    padding: 0 18px 5px 0;
+}
+
+#user {
+    margin-right: 30px;
+    padding-top: 8px;
 }
 
 /* 
 ----------  ----------
 */
+
+body {
+    background-color: rgb(243, 243, 243);
+}
