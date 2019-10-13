@@ -52,13 +52,13 @@ nav {
     height: 28px; 
     width: 51px;
     padding: 1px 6px;
-    background: #f8f8f8a8;
+    background-color: #f8f8f8a8;
     border: 1px solid lightgray;
     margin: 0 0;
 }
 
 #search-btn:hover {
-    background: #c7c7c7;
+    background-color: #c7c7c7;
 }
 
 #camera {
