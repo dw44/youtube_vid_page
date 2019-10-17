@@ -1,5 +1,12 @@
+/* 
+---------- Boilerplate ----------
+*/
 *, *:before, *:after {
     box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(243, 243, 243);
 }
 
 /* 
@@ -9,9 +16,8 @@ nav {
     height: 56px;
     width: 100vw;
     display: flex;
-    position: fixed;
+    position: absolute;
     background-color: #fff;
-
 }
 
 .nav-left, .nav-right {
@@ -46,6 +52,10 @@ nav {
     height: 28px;
     padding: 1px 4px;
     margin: 0 0;
+    font-family: 'Roboto','Noto',sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
 }
 
 #search-btn {
@@ -80,9 +90,22 @@ nav {
 }
 
 /* 
-----------  ----------
+---------- Main ----------
 */
 
-body {
-    background-color: rgb(243, 243, 243);
+.main {
+    border: 1px solid black;
+    width: 90%;
+    height: 1200px;
+    position: absolute;
+    top: 80px;
+    left: 100px;
+}
+
+.sidebar {
+    position: relative;
+    border: 1px solid black;
+    height: 100%;
+    width: 30%;
+    float: right;
 }
