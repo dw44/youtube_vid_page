@@ -19,6 +19,7 @@ nav {
     display: flex;
     position: fixed;
     background-color: #fff;
+    z-index: 1;
 }
 
 .nav-left, .nav-right {
@@ -104,7 +105,7 @@ nav {
 }
  
 .sidebar {
-    background: #fff;
+    background: rgb(243, 243, 243);
     padding: 5px 0 0 0;
     height: 100vh;
     flex: 2;
@@ -112,7 +113,7 @@ nav {
 }
 
 .content {
-    background: #e6f5f3;
+    background: rgb(243, 243, 243);
     height: 100vh;
     flex: 5;
 }
