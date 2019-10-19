@@ -7,17 +7,19 @@
 
 body {
     background-color: rgb(243, 243, 243);
+    font-family: 'Roboto','Noto',sans-serif;
 }
 
 /* 
 ---------- Main Navigation Bar ----------
 */
-nav {
+header {
     height: 56px;
     width: 100vw;
     display: flex;
-    position: absolute;
+    position: fixed;
     background-color: #fff;
+    z-index: 1;
 }
 
 .nav-left, .nav-right {
@@ -90,22 +92,209 @@ nav {
 }
 
 /* 
----------- Main ----------
+---------- Page Layout ----------
 */
 
 .main {
-    border: 1px solid black;
     width: 90%;
-    height: 1200px;
-    position: absolute;
-    top: 80px;
-    left: 100px;
+    height: 100vh;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    margin: 80px 100px 0 100px;
+}
+ 
+.sidebar {
+    background: rgb(243, 243, 243);
+    padding: 5px 0 0 0;
+    height: 100vh;
+    flex: 2;
+    order: 1;
 }
 
-.sidebar {
-    position: relative;
-    border: 1px solid black;
-    height: 100%;
-    width: 30%;
+.content {
+    background: rgb(243, 243, 243);
+    height: 100vh;
+    flex: 7;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 
+---------- Sidebar ----------
+*/
+
+
+/* Autoplay Button */
+
+#auto-play {
     float: right;
+    font-size: 14px;
+    color: gray;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 48px;
+    height: 20px;
+    bottom: 2px;
+}
+  
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    background-color: #e3e3e3;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+input:checked + .slider {
+    background-color: #2196F3;
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+  
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* Autoplay Button End */
+
+
+/* 
+---------- Video ----------
+*/
+
+#video-window {
+    height: 640px;
+    width: 98%;
+}
+
+/* ------- Sidebar Thumb Template */
+hgroup > h1 {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+hgroup > h2 {
+    font-size: 12px;
+    color: #6e6e6e;
+}
+
+.suggested {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.sug-thumb {
+    width: 168px;
+    height: 94px;
+}
+
+.sug-description {
+    width: 220px;
+    height: 94px;
+    line-height: 20px;
+    padding-left: 10px;
+    float: right;
+    display: flex;
+    flex-direction: column;
+}
+/* ------- Sidebar Thumb Template */
+
+.separator {
+    border: 0.5px solid gray;
+    width: 100%;
+    height: 1px;
+    margin: 10px 0;
+}
+
+/* ------- Stuff below video ------- */
+.description {
+    width: 98%;
+    height: 5em;
+    line-height: 2.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+
+.like-share {
+    float: right;
+    align-self: flex-start;
+    margin-top: 53px;
+    border-bottom: 2.5px solid gray;
+    
+}
+
+.title {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.views-Date {
+    font-size: 14px;
+}
+
+.title-separator {
+    margin: 0;
+    width: 98%;
+}
+
+/* ------- Dota Cinema/ YT Gaming ------- */
+.yt-gaming {
+    margin: 5px 0;
+    width: 98%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+}
+.dc-logo {
+    border: 1px solid black;
+    flex: 1;
+}
+.channel-info {
+    border: 1px solid coral;
+    flex: 22;
+    display: flex;
+    flex-direction: column;
 }
