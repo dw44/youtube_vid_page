@@ -328,3 +328,36 @@ a:visited {
 }
 
 /* ------- Dota Cinema/ YT Gaming Ends here------- */
+
+/* ------- Stuff Before Comments------- */
+
+.pre-comment {
+    margin-top: 15px;
+
+    width: 98%;
+}
+
+.sort {
+    display: flex;
+    flex-direction: row;
+    width: 17%;
+    justify-content: space-between;
+}
+
+.sort > h3 {
+    margin-top: 4px;
+}
+
+.add-comment {
+    margin-top: 15px;
+
+}
+
+#comment-text {
+    border: none;
+    border-bottom: 1px solid gray;
+    width: 96%;
+    height: 30px;
+    background-color: rgb(243, 243, 243);
+    font-family: inherit;
+}
