@@ -282,19 +282,49 @@ hgroup > h2 {
 
 /* ------- Dota Cinema/ YT Gaming ------- */
 .yt-gaming {
-    margin: 5px 0;
+    margin: 15px 0;
     width: 98%;
-    border: 1px solid black;
     display: flex;
     flex-direction: row;
 }
 .dc-logo {
-    border: 1px solid black;
     flex: 1;
 }
 .channel-info {
-    border: 1px solid coral;
     flex: 22;
     display: flex;
     flex-direction: column;
 }
+
+#sub {
+    height: 36px;
+    width: 150px;
+    border: none;
+    padding: 10px 12px;
+    border-radius: 2px;
+    font-weight: 600;
+    font-family: inherit;
+    font-size: 15px;
+    color: #fff;
+    background-color: #f00;
+    float: right;
+    margin-top: -25px;
+}
+
+a:visited {
+    color: blue;
+}
+
+.more-info {
+    font-size: 14px;
+    margin-top: 10px;
+    line-height: 20px;
+}
+
+.gaming {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ------- Dota Cinema/ YT Gaming Ends here------- */
