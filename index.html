@@ -8,10 +8,9 @@
     <link rel="icon" href="Assets/icons/yticn.jpeg">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="trial.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>    
-
     <header id="main-header">
         <div class="nav-left nav-element">
             <a href=""><img id="bars" src="Assets/icons/bars.png"></a>
@@ -29,7 +28,7 @@
         </div> 
     </header>
 
-    <div class="main">
+    <section class="main">
         <section class="content">
             <div class="video">
                 <iframe id="video-window" src="https://www.youtube.com/embed/dCgUGDwKecM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -77,7 +76,7 @@
             <div class="pre-comment">
                 <div class="sort">
                     <h3>5 Comments</h3>
-                    <img id="sort-by" src="Assets/video_info/SortBy.png">
+                    <a href="#"><img id="sort-by" src="Assets/video_info/SortBy.png"></a>
                 </div>
                 <div class="add-comment">
                     <img src="Assets/video_info/UserComment.png">
@@ -85,11 +84,56 @@
                 </div>
             </div>
 
-            <!-- COMMENTS -->
+            <!-- CURRENT WORKING AREA -->
+            <section class="comments-sec">
+                <div class="single-comment">
+                    <img class="commenter-prof" src="Assets/video_info/UserComment.png">
+                    <div class="comment-body">
+                        <p class="commenter">John Doe<span class="comment-time">&nbsp;&nbsp;2 days ago</span></p>
+                        <p class="actual-comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ut tempore eveniet, corrupti inventore distinctio repellendus reiciendis, cupiditate maxime minus ducimus aut atque dolor, rerum nostrum nemo numquam. Quasi tempore autem perspiciatis rerum natus dolorem saepe debitis harum ex eius.</p>
+                        <a href="#"><img class="like-unlike" src="Assets/video_info/LikeReply.png"></a>
+                    </div>
+                </div>
+                <div class="single-comment">
+                    <img class="commenter-prof" src="Assets/video_info/UserComment.png">
+                    <div class="comment-body">
+                        <p class="commenter">John Doe<span class="comment-time">&nbsp;&nbsp;2 days ago</span></p>
+                        <p class="actual-comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ut tempore eveniet, corrupti inventore distinctio repellendus reiciendis, cupiditate maxime minus ducimus aut atque dolor, rerum nostrum nemo numquam. Quasi tempore autem perspiciatis rerum natus dolorem saepe debitis harum ex eius.</p>
+                        <a href="#"><img class="like-unlike" src="Assets/video_info/LikeReply.png"></a>
+                    </div>
+                </div>
+                <div class="single-comment">
+                    <img class="commenter-prof" src="Assets/video_info/UserComment.png">
+                    <div class="comment-body">
+                        <p class="commenter">John Doe<span class="comment-time">&nbsp;&nbsp;2 days ago</span></p>
+                        <p class="actual-comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ut tempore eveniet, corrupti inventore distinctio repellendus reiciendis, cupiditate maxime minus ducimus aut atque dolor, rerum nostrum nemo numquam. Quasi tempore autem perspiciatis rerum natus dolorem saepe debitis harum ex eius.</p>
+                        <a href="#"><img class="like-unlike" src="Assets/video_info/LikeReply.png"></a>
+                    </div>
+                </div>
+                <div class="single-comment">
+                    <img class="commenter-prof" src="Assets/video_info/UserComment.png">
+                    <div class="comment-body">
+                        <p class="commenter">John Doe<span class="comment-time">&nbsp;&nbsp;2 days ago</span></p>
+                        <p class="actual-comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ut tempore eveniet, corrupti inventore distinctio repellendus reiciendis, cupiditate maxime minus ducimus aut atque dolor, rerum nostrum nemo numquam. Quasi tempore autem perspiciatis rerum natus dolorem saepe debitis harum ex eius.</p>
+                        <a href="#"><img class="like-unlike" src="Assets/video_info/LikeReply.png"></a>
+                    </div>
+                </div>
+                <div class="single-comment">
+                    <img class="commenter-prof" src="Assets/video_info/UserComment.png">
+                    <div class="comment-body">
+                        <p class="commenter">John Doe<span class="comment-time">&nbsp;&nbsp;2 days ago</span></p>
+                        <p class="actual-comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ut tempore eveniet, corrupti inventore distinctio repellendus reiciendis, cupiditate maxime minus ducimus aut atque dolor, rerum nostrum nemo numquam. Quasi tempore autem perspiciatis rerum natus dolorem saepe debitis harum ex eius.</p>
+                        <a href="#"><img class="like-unlike" src="Assets/video_info/LikeReply.png"></a>
+                    </div>
+                </div>
+            </section>
+            <!-- CURRENT WORKING AREA -->
+            
         </section>
+
         <!-- SIDEBAR/SUGGESTED VIDEOS STARTS HERE -->
         <aside class="sidebar">
-            <!--  AUTOPLAY -->
+            <!--  AUTOPLAY BUTTON-->
             <span class="sidebar-top">
                 <span id="up-next">Up next</span>
                 <span id="auto-play">AUTOPLAY
@@ -217,8 +261,34 @@
                     <h2>510k views</h2>
                 </hgroup>
             </div> 
+            <div class="suggested">
+                <img class="sug-thumb" src="Assets/THUMB1.jpg">
+                <hgroup class="sug-description">
+                    <h1>Dota 2 Lycan Kills 5 Heroes and Lives</h1>
+                    <h2>Dota 2</h2>
+                    <h2>510k views</h2>
+                </hgroup>
+            </div>
+
+            <div class="suggested">
+                <img class="sug-thumb" src="Assets/THUMB1.jpg">
+                <hgroup class="sug-description">
+                    <h1>Dota 2 Lycan Kills 5 Heroes and Lives</h1>
+                    <h2>Dota 2</h2>
+                    <h2>510k views</h2>
+                </hgroup>
+            </div>
+
+            <div class="suggested">
+                <img class="sug-thumb" src="Assets/THUMB1.jpg">
+                <hgroup class="sug-description">
+                    <h1>Dota 2 Lycan Kills 5 Heroes and Lives</h1>
+                    <h2>Dota 2</h2>
+                    <h2>510k views</h2>
+                </hgroup>
+            </div> 
         </aside>
         <!-- SIDEBAR/SUGGESTED VIDEOS END HERE -->
-    </div>    
+    </section>    
 </body>
 </html>

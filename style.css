@@ -282,19 +282,129 @@ hgroup > h2 {
 
 /* ------- Dota Cinema/ YT Gaming ------- */
 .yt-gaming {
-    margin: 5px 0;
+    margin: 15px 0;
     width: 98%;
-    border: 1px solid black;
     display: flex;
     flex-direction: row;
 }
 .dc-logo {
-    border: 1px solid black;
     flex: 1;
 }
 .channel-info {
-    border: 1px solid coral;
     flex: 22;
     display: flex;
     flex-direction: column;
+}
+
+#sub {
+    height: 36px;
+    width: 150px;
+    border: none;
+    padding: 10px 12px;
+    border-radius: 2px;
+    font-weight: 600;
+    font-family: inherit;
+    font-size: 15px;
+    color: #fff;
+    background-color: #f00;
+    float: right;
+    margin-top: -25px;
+}
+
+a:visited {
+    color: blue;
+}
+
+.more-info {
+    font-size: 14px;
+    margin-top: 10px;
+    line-height: 20px;
+}
+
+.gaming {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ------- Dota Cinema/ YT Gaming Ends here------- */
+
+/* ------- Stuff Before Comments------- */
+
+.pre-comment {
+    margin-top: 15px;
+
+    width: 98%;
+}
+
+.sort {
+    display: flex;
+    flex-direction: row;
+    width: 17%;
+    justify-content: space-between;
+}
+
+.sort > h3 {
+    margin-top: 4px;
+}
+
+.add-comment {
+    margin-top: 15px;
+
+}
+
+#comment-text {
+    border: none;
+    border-bottom: 1px solid gray;
+    width: 96%;
+    height: 30px;
+    background-color: rgb(243, 243, 243);
+    font-family: inherit;
+}
+
+/* ------- Comments------- */
+
+.comments-sec {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+}/* DONE. FORGET ABOUT THIS SELECTOR FOR NOW  */
+
+.single-comment {
+    display: flex;
+    flex-direction: row;
+    margin: 18px 0;
+} /* 2 rows. 1 contains user DP, one the actual content in another flexbox */
+
+.commenter-prof {
+    height: 43px;
+    width: 43px;
+}
+
+.comment-body {
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+} /*Another flexbox, that contains the commenter ID, comment date/time, comment body, and like/unlike etc */
+
+.commenter {
+    font-size: 14px;
+}
+
+.comment-time {
+    font-size: 0.85em;
+    color: #303030;
+}
+
+.actual-comment {
+    margin-top: 10px;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.like-unlike {
+    margin-top: 10px;
+    width: 136px;
+    height: 17px;
 }
